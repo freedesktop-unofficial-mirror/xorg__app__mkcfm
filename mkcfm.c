@@ -25,8 +25,6 @@
 #include <sys/types.h>
 #include <dirent.h>
 
-#include <X11/os.h>
-
 #include <X11/fonts/fntfilst.h>
 #include <X11/fonts/FSproto.h>
 #include <X11/fonts/FS.h>
@@ -59,6 +57,9 @@ extern char *unicodetoPSname(unsigned short code);
 
 FontScalableRec vals;
 FontEntryRec entry;
+
+void FatalError(const char *f, ...);
+void ErrorF(const char *f, ...);
 
 int 
 main(int argc, char **argv)
