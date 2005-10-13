@@ -27,6 +27,6 @@ mkcfm_LDADD = $(MKCFM_LIBS)
 mkcfm_SOURCES =	\
         mkcfm.c
 
-dist_man_MANS = \
+dist_man1_MANS = \
         mkcfm.man
 
