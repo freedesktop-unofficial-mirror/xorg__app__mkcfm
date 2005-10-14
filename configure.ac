@@ -1,4 +1,5 @@
-
+dnl $Id$
+dnl
 dnl  Copyright 2005 Red Hat, Inc.
 dnl 
 dnl  Permission to use, copy, modify, distribute, and sell this software and its
@@ -35,5 +36,8 @@ AC_PROG_INSTALL
 PKG_CHECK_MODULES(MKCFM, x11 xfont libfs fontsproto)
 AC_SUBST(MKCFM_CFLAGS)
 AC_SUBST(MKCFM_LIBS)
+
+XORG_MANPAGE_SECTIONS
+XORG_RELEASE_VERSION
 
 AC_OUTPUT([Makefile])
