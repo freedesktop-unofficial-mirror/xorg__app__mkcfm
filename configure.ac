@@ -33,7 +33,7 @@ AC_PROG_CC
 AC_PROG_INSTALL
 
 # Checks for pkg-config packages
-PKG_CHECK_MODULES(MKCFM, x11 xfont libfs fontsproto fontenc)
+PKG_CHECK_MODULES(MKCFM, x11 xfont libfs fontenc)
 AC_SUBST(MKCFM_CFLAGS)
 AC_SUBST(MKCFM_LIBS)
 
