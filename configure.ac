@@ -32,6 +32,13 @@ AM_CONFIG_HEADER(config.h)
 AC_PROG_CC
 AC_PROG_INSTALL
 
+AC_ARG_WITH(ciddir,
+        AC_HELP_STRING([--with-ciddir=<path>],
+                       [Set default CID directory (default: ${libdir}/X11/fonts/CID)]),
+        [DEFAULTCID="$withval"],
+        [DEFAULTCID=${libdir}/X11/fonts/CID])
+AC_SUBST([DEFAULTCID])
+
 # Checks for pkg-config packages
 PKG_CHECK_MODULES(MKCFM, x11 xfont libfs fontenc)
 AC_SUBST(MKCFM_CFLAGS)
