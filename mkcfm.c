@@ -37,7 +37,9 @@
 static void CIDFillVals(FontScalablePtr);
 static Bool DoDirectory(char *dirName);
  
+#ifndef DEFAULTCID
 #define DEFAULTCID "/usr/X11R6/lib/X11/fonts/CID"
+#endif
 #define DECIPOINTSPERINCH 722.7
 #define DEFAULTRES 75
 #define DEFAULTPOINTSIZE 120
